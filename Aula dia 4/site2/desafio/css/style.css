@@ -1,0 +1,117 @@
+
+*{
+	margin: 0;
+}
+
+html, body{
+	width: 100vw;
+	height: 100vh;
+	background: cyan;
+}
+
+header{
+	width: 100%;
+	height: 10%;
+	top: 0;
+	position: absolute;
+	overflow: hidden;
+	background: tomato;
+	border-bottom: 5px solid #000;
+}
+
+main{
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+footer{
+	width: 100%;
+	height: 10%;
+	bottom: 0;
+	position: absolute;
+	background: tomato;
+	border-top: 5px solid #000;	
+}
+
+p{
+	margin: 0.8%;
+	text-align: justify;
+}
+
+.estante{
+	width: 65%;
+	height: auto;
+	display: flex;
+	margin: auto;
+}
+
+#quadrado{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	background: purple;
+	position: fixed;
+	bottom: 15%;
+	right: 18%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: verdana, arial, cursive;
+	font-size: 15px;
+	color: white;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.estante-botoes{
+	width: 55%;
+	height: 70%;
+	position: relative;
+	top: 15%;
+	display: flex;
+	margin: auto;
+}
+
+.botao{
+	width: 35%;
+	margin: auto;
+	border: 1px solid #000;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: purple;
+	text-decoration: none;
+	color: #000;
+	font-family: verdana, arial, cursive;
+	font-size: 25px;
+}
+
+.botao:hover{
+	background: green;
+	color: #fff;
+}
+
+@media screen and (max-width: 700px){
+	p{
+		padding: 1%;
+	}
+
+	.estante{
+		flex-direction: column;
+	}
+
+	#quadrado{
+		display: none;
+	}
+
+	.estante-botoes{
+		display: none;
+	}
+}
